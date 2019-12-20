@@ -4,7 +4,7 @@
   "description": "docker ps",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./src/tests *.js",
+    "test": "mocha --timeout 5000 ./src/tests *.js",
     "test:prod":"cross-env NODE_ENV=prod npm t",
     "production":"cross-env NODE_ENV=prod node src/api.js",
     "start": "cross-env NODE_ENV=prod node src/api.js"
