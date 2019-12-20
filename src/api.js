@@ -35,7 +35,7 @@ const HapiSwagger = require('hapi-swagger')
 
 //new APP
 const app = new Hapi.Server({
-    port:5000
+    port:process.env.PORT
 })
 
 
@@ -108,6 +108,7 @@ async function main() {
 
     //Start Server
     await app.start()
+    console.log("Info Server :", app.info)
     console.log('Server running', app.info.port)
 
     return app
