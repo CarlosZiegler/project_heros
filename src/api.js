@@ -35,7 +35,7 @@ const HapiSwagger = require('hapi-swagger')
 
 //new APP
 const app = new Hapi.Server({
-    port:process.env.PORT
+    port:process.env.PORT || 5000
 })
 
 //List all Methods from a Instance
