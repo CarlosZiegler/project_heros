@@ -8,7 +8,7 @@ class UtilRoutes extends BaseRoute{
 
     coverage(){
         return {
-            path: '/coverage/{param*}',
+            path: '/coverage',
             method:'GET',
             config: {
                 auth:false,
@@ -18,7 +18,7 @@ class UtilRoutes extends BaseRoute{
             },
             handler:{
                 directory: {
-                    path: join(__dirname,'../coverage'),
+                    path: join(__dirname,'../../coverage'),
                     redirectToSlash: true,
                     index: true
                 }
