@@ -8,7 +8,7 @@ class UtilRoutes extends BaseRoute{
 
     coverage(){
         return {
-            path: '/coverage',
+            path: '/coverage/{param*}',
             method:'GET',
             config: {
                 auth:false,
