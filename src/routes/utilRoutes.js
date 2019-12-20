@@ -11,10 +11,7 @@ class UtilRoutes extends BaseRoute{
             path: '/coverage/{params*}',
             method:'GET',
             config: {
-                auth:false,
-                tags:['api'],
-                description:'Coverage',
-                notes:'coverage',
+                auth:false
             },
             handler:{
                 directory: {
