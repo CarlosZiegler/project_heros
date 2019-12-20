@@ -37,7 +37,7 @@ const HapiSwagger = require('hapi-swagger')
 const app = new Hapi.Server({
     port:process.env.PORT || 5000
 })
-console.log(server.options.port)
+console.log(app.options.port)
 //List all Methods from a Instance
 function mapRoutes(instance, methods) {
     return methods.map(method => instance[method]())
